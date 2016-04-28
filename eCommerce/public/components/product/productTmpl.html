@@ -1,0 +1,6 @@
+<h1>Product List</h1>
+<div ng-repeat="product in productList track by $index">
+  {{product.title}}..........{{product.description}}..........${{product.price}}<br>
+  <button type="submit" class="add-to-cart" ng-click="addToCart(product)">Add to Cart</button>
+  <button type="submit" class="remove-from-cart" ng-click="removeFromCart(product)">Remove from Cart</button><hr>
+</div>

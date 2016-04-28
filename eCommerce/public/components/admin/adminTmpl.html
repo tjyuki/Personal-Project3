@@ -1,0 +1,17 @@
+<section class="admin-product-list">
+<h1>ADMIN: Product List</h1>
+<br>
+<input type="text" ng-model="newProduct.title" placeholder="Product Name">
+<input type="text" ng-model="newProduct.description" placeholder="Description">
+<input type="text" ng-model="newProduct.price" placeholder="Price">
+<button class="add-product" ng-click="addNewProduct(newProduct)">Add Product</button>
+<br><br>
+<div ng-repeat="product in productList track by $index">
+  {{product.title}}..........{{product.description}}..........${{product.price}}
+</div>
+<br><br>
+<input type="text" ng-model="existingProduct.title" placeholder="Product Name">
+<input type="text" ng-model="existingProduct.description" placeholder="Description">
+<input type="text" ng-model="existingProduct.price" placeholder="Price">
+<button class="remove-product" ng-click="removeProduct(existingProduct)">Remove Product</button>
+</section>

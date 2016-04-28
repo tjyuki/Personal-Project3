@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="eCommerceApp">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="view/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <title>eCommerce</title>
+  </head>
+  <body ng-controller="productCtrl">
+
+    <header-dir></header-dir>
+
+    <section class="product-view">
+      <div ui-view></div>
+    </section>
+
+
+
+<!-- AngularJS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+<!-- Angular UI Routers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+<!-- JQuery -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Local -->
+<script src="components/eCommerceApp.js"></script>
+<!-- Directives -->
+<script src="components/header/headerDir.js"></script>
+<!-- Controllers -->
+<script src="components/product/productCtrl.js"></script>
+<!-- Services -->
+<script src="components/services/productService.js"></script>
+
+  </body>
+</html>
